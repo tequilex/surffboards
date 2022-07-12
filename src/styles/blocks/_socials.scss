@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: rem(14px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include phones {
+    margin-right: rem(21px);
+  }
+}
+
+.social-logo {
+  width: rem(20px);
+  height: rem(20px);
+  transition: 0.3s;
+  fill: #B3B3B3;
+
+  &:hover {
+    cursor: pointer;
+    fill: #292929;
+  }
+}

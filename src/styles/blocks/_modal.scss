@@ -1,0 +1,44 @@
+.modal {
+  display: none;
+
+  &.fancybox-content {
+    padding: 0;
+  }
+
+  .fancybox-button {
+    display: none;
+  }
+
+  &.error-modal {
+    .modal__content {
+      color: red;
+    }
+  }
+}
+
+.modal__container {
+  background: #fff;
+  padding: rem(38px) rem(68px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: rem(20px);
+  color: #000;
+}
+
+.app-close-modal {
+  display: inline-block;
+}
+
+.form__input {
+  &.input-error {
+    border-color: red;
+  }
+}
+
+.fancybox-active {
+  height: 100%;
+}

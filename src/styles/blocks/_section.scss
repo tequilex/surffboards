@@ -1,0 +1,44 @@
+.section {
+  // height: 100vh;
+  height: 100%;
+  min-height: rem(652px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--title-color--white {
+    color: #fff;
+    
+    .section__title {
+      color: inherit;
+    }
+  }
+}
+
+.order-section {
+  background: url("./images/img/cta.png") center top no-repeat, #fff;
+  background-size: cover;
+  min-height: rem(652px);
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: rem(48px);
+  line-height: rem(58px);
+  margin-bottom: rem(59px);
+  text-align: center;
+  color: #292929;
+  text-transform: uppercase;
+
+  &-rewiew {
+    margin-bottom: rem(32px);
+  }
+
+  @include tablets {
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    margin-bottom: rem(39px);
+  }
+}

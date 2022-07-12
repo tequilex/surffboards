@@ -1,0 +1,37 @@
+.fullscreen-menu__close {
+    position: absolute;
+    top: (44px);
+    right: rem(15px);
+    fill: #fff;
+}
+
+.fullscreen-menu {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#313131;
+  position: fixed;
+  justify-content: center;
+  
+  color: #fff;
+  padding: rem(10px);
+  left: 150vw;
+  transition: .7s;
+}
+
+.icon__close {
+  width: rem(20px);
+  height: rem(20px);
+}
+
+.menu.menu--vertical {
+  @include tablets {
+    display: block;
+  }
+}
+
+.menu--vertical .menu__list {
+  display: flex;
+  flex-direction: column; 
+}

@@ -1,0 +1,35 @@
+.button {
+  padding: rem(21px) rem(41px);
+  gap: rem(10px);
+  background: #FEDB3F;
+  color: #000000;
+  border-radius: rem(100px);
+  font-weight: 800;
+  font-size: rem(16px);
+  line-height: rem(18px);
+  text-transform: uppercase;
+  border: none;
+
+  &--transparent {
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    text-transform: none;
+    padding: rem(21px) rem(16px);
+
+    &:hover {
+      background: transparent;
+      color: #FEDB3F;
+    }
+  }
+
+  @include phones {
+    font-size: rem(19px);
+  }
+}
+
+.hello__button {
+  display: inline-block;
+}

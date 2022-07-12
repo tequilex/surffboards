@@ -1,0 +1,31 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: rem(21px) 0 rem(31px) 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.footer-contacts__phone {
+  @include phones {
+    margin-bottom: rem(20px);
+  }
+}
+
+.contacts__phone-icon-img-elem {
+  width: rem(13px);
+  height: rem(14px);
+  margin-right: rem(5px);
+  fill: #000;
+}
